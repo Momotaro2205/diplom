@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/68af5dec3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <title>Главная страница</title>
+  </head>
+
+  <body>
+    <a href="#top" id="back-to-top" class="back-to-top" title="Back to top"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
+
+    <div class="wrapper">
+      <!--================ Start Header Menu Area =================-->
+      <header class="header">
+        <div class="header-stripe"><a href="#">Летние скидки до 60%</a></div>
+        <div class="header-top py-1">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6 col-sm-4">
+                <div class="header-top-phone d-flex align-items-center h-100">
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:+74951112233" class="ms-2">(495) 111-22-33</a>
+                </div>
+              </div>
+              <div class="col-sm-4 d-none d-sm-block">
+                <div
+                  class="header-top-email d-flex justify-content-center align-items-center h-100"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:info@muzicshop.ru" class="ms-2"
+                    >mailto:info@muzicshop.ru</a
+                  >
+                </div>
+              </div>
+              <div class="col-6 col-sm-4">
+                <div class="header-top-acount d-flex justify-content-end">
+                  <div class="dropdown">
+                    <i class="fa-solid fa-user"></i>
+                    <button
+                      class="btn btn -sm dropdown-toggle acount"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Кабинет
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Войти</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Зарегистрироваться</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-middle py-4">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-sm-6">
+                <a href="index.html" class="header-logo"
+                  ><img src="img/logo.webp"
+                /></a>
+              </div>
+
+              <div
+                class="col-lg-4 order-md-2 cart-buttons text-end d-none d-lg-block"
+              >
+                <a href="#" class="btn p-1">
+                  <i class="fa-solid fa-heart"></i>
+                  <span
+                    class="badge text-bg-warning cart-badge bg-warning border-warning rounded-circle"
+                    >3</span
+                  >
+                </a>
+                <button
+                  class="btn p-1"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasCart"
+                  aria-controls="#offcanvasCart"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span
+                    class="badge text-bg-warning cart-badge bg-warning border-warning rounded-circle"
+                    >3</span
+                  >
+                </button>
+              </div>
+              <div class="col-lg-4 col-sm-6 order-md-1 mt-4 mt-md-0">
+                <form action="">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="search"
+                      placeholder="Поиск"
+                      aria-label="Поиск"
+                      aria-describedby="button-addon2"
+                    />
+                    <button
+                      class="btn btn-outline-warning"
+                      type="submit"
+                      id="button-search"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasCart"
+          aria-labelledby="offcanvasCartLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Корзина</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              Какой-то текст в качестве заполнителя. В реальной жизни у вас
+              могут быть элементы, которые Вы выбрали. Нравится, текст,
+              изображения, списки и т. д.
+            </div>
+            <div class="dropdown mt-3">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+              >
+                Кнопка раскрывающегося списка
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Действие</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Другое действие</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Что-то еще здесь</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="header-bottom sticky-top" id="header-height">
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-start"
+              id="offcanvasNavbar"
+              tabindex="-1"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="index.html"
+                      >Главная</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      data-bs-auto-close="outside"
+                    >
+                      Каталог
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li class="nav-item dropend">
+                        <a
+                          class="dropdown-item dropdown-toggle"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          data-bs-auto-close="outside"
+                          >Гитары</a
+                        >
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li>
+                            <a class="dropdown-item" href="#">Электрогитары</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Акустические гитары</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Классические гитары</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Бас-гитары></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Ударные инструменты</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Клавишные инструменты</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Усилители</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">DJ оборудование</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Студийное оборудование</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Световое оборудование</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Программное обеспечение</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Аксессуары</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Музыкальный мерч</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Ноты</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#anchor1">Оплата</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#anchor2">Доставка</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#anchor3">Контакты</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#anchor4">О нас</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="d-block d-lg-none">
+              <a href="#" class="btn p-1">
+                <i class="fa-solid fa-heart"></i>
+                <span
+                  class="badge text-bg-warning cart-badge bg-warning rounded-circle"
+                  >3</span
+                >
+              </a>
+
+              <button
+                class="btn p-1"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span
+                  class="badge text-bg-warning cart-badge bg-warning rounded-circle"
+                  >3</span
+                >
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!--================ End Header Menu Area =================-->
+      <main class="main">
+        <!--================ Start Carousel =================-->
+
+        <div
+          id="carousel"
+          class="carousel slide carousel-fade d-none d-md-block"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href=""
+                ><img src="img/slide_1.webp" class="d-block w-100" alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href=""
+                ><img src="img/slide_2.webp" class="d-block w-100" alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href=""
+                ><img src="img/slide_3.webp" class="d-block w-100" alt="..."
+              /></a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+        <!--================ End Carousel =================-->
+
+        <!--================ Start trigger Area =================-->
+        <section class="triggers">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="main__title">
+                  <span class="main__title--span">Наши преимущества</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 text-center">
+                <div class="item">
+                  <p><i class="fa-solid fa-guitar"></i></p>
+                  <p>Широкий ассортимент товаров. Более 20 тыс. наименований</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 text-center">
+                <div class="item">
+                  <p><i class="fa-solid fa-percent"></i></p>
+                  <p>Розничные и оптовые скидки. Программа лояльности</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 text-center">
+                <div class="item">
+                  <p><i class="fa-solid fa-truck"></i></p>
+                  <p>
+                    Экспресс доставка за 1-2 часа. Бесплатная доставка от 5000
+                    руб.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 text-center">
+                <div class="item">
+                  <p><i class="fa-solid fa-screwdriver-wrench"></i></p>
+                  <p>
+                    Бесплатная настройка музыкальных инструментов. Консультации
+                    специалистов
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--================ End trigger Area =================-->
+
+        <!--================ Start catalog Area =================-->
+        <section class="catalog">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="main__title">
+                  <span class="main__title--span">Каталог</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product_card">
+                  <div class="product_image">
+                    <a href="#"><img src="img/guitar.webp" alt="Гитары" /></a>
+                  </div>
+                  <div class="product_name">
+                    <h4>
+                      <a href="#">Гитары</a>
+                    </h4>
+                    <div class="product_link d-flex justify-content-center">
+                      <a href="#" class="btn btn-outline-secondary">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product_card">
+                  <div class="product_image">
+                    <a href="#"><img src="img/bass.webp" alt="Бас-гитары" /></a>
+                  </div>
+                  <div class="product_name">
+                    <h4>
+                      <a href="#">Бас-гитары</a>
+                    </h4>
+                    <div class="product_link d-flex justify-content-center">
+                      <a href="#" class="btn btn-outline-secondary">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product_card">
+                  <div class="product_image">
+                    <a href="#"
+                      ><img src="img/drum.webp" alt="Ударные инструменты"
+                    /></a>
+                  </div>
+                  <div class="product_name">
+                    <h4>
+                      <a href="#">Ударные инструменты</a>
+                    </h4>
+                    <div class="product_link d-flex justify-content-center">
+                      <a href="#" class="btn btn-outline-secondary">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product_card">
+                  <div class="product_image">
+                    <a href="#"
+                      ><img src="img/key.webp" alt="Клавишные инструменты"
+                    /></a>
+                  </div>
+                  <div class="product_name">
+                    <h4>
+                      <a href="#">Клавишные инструменты</a>
+                    </h4>
+                    <div class="product_link d-flex justify-content-center">
+                      <a href="#" class="btn btn-outline-secondary">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product_card">
+                  <div class="product_image">
+                    <a href="#"><img src="img/amp.webp" alt="Усилители" /></a>
+                  </div>
+                  <div class="product_name">
+                    <h4>
+                      <a href="#">Усилители</a>
+                    </h4>
+                    <div class="product_link d-flex justify-content-center">
+                      <a href="#" class="btn btn-outline-secondary">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product_card">
+                  <div class="product_image">
+                    <a href="#"
+                      ><img src="img/dj.webp" alt="DJ оборудование"
+                    /></a>
+                  </div>
+                  <div class="product_name">
+                    <h4>
+                      <a href="#">DJ оборудование</a>
+                    </h4>
+                    <div class="product_link d-flex justify-content-center">
+                      <a href="#" class="btn btn-outline-secondary">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product_card">
+                  <div class="product_image">
+                    <a href="#"
+                      ><img src="img/micsh.webp" alt="Студийное оборудование"
+                    /></a>
+                  </div>
+                  <div class="product_name">
+                    <h4>
+                      <a href="#">Студийное оборудование</a>
+                    </h4>
+                    <div class="product_link d-flex justify-content-center">
+                      <a href="#" class="btn btn-outline-secondary">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product_card">
+                  <div class="product_image">
+                    <a href="#"
+                      ><img
+                        src="img/lightning.webp"
+                        alt="Световое оборудование"
+                    /></a>
+                  </div>
+                  <div class="product_name">
+                    <h4>
+                      <a href="#">Световое оборудование</a>
+                    </h4>
+                    <div class="product_link d-flex justify-content-center">
+                      <a href="#" class="btn btn-outline-secondary">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product_card">
+                  <div class="product_image">
+                    <a href="#"
+                      ><img
+                        src="img/software.webp"
+                        alt="Программное обеспечение"
+                    /></a>
+                  </div>
+                  <div class="product_name">
+                    <h4>
+                      <a href="#">Программное обеспечение</a>
+                    </h4>
+                    <div class="product_link d-flex justify-content-center">
+                      <a href="#" class="btn btn-outline-secondary">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product_card">
+                  <div class="product_image">
+                    <a href="#"
+                      ><img src="img/accessories.webp" alt="Аксессуары"
+                    /></a>
+                  </div>
+                  <div class="product_name">
+                    <h4>
+                      <a href="#">Аксессуары</a>
+                    </h4>
+                    <div class="product_link d-flex justify-content-center">
+                      <a href="#" class="btn btn-outline-secondary">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product_card">
+                  <div class="product_image">
+                    <a href="#"
+                      ><img src="img/merch.webp" alt="Музыкальный мерч"
+                    /></a>
+                  </div>
+                  <div class="product_name">
+                    <h4>
+                      <a href="#">Музыкальный мерч</a>
+                    </h4>
+                    <div class="product_link d-flex justify-content-center">
+                      <a href="#" class="btn btn-outline-secondary">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product_card">
+                  <div class="product_image">
+                    <a href="#"><img src="img/notes.webp" alt="Ноты" /></a>
+                  </div>
+                  <div class="product_name">
+                    <h4>
+                      <a href="#">Ноты</a>
+                    </h4>
+                    <div class="product_link d-flex justify-content-center">
+                      <a href="#" class="btn btn-outline-secondary">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--================ End catalog Area =================-->
+
+        <!--================ Start payment Area =================-->
+
+        <section class="payment">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="main__title">
+                  <span class="main__title--span" id="anchor1">Оплата</span>
+                </div>
+              </div>
+            </div>
+            <p><b>Мы принимаем следующие виды оплаты:</b></p>
+            <ul>
+              <li>Оплата банковской картойна сайте</li>
+              <li>Безналичная оплата в магазине</li>
+              <li>Наличная оплата</li>
+              <li>Оплата по счету</li>
+              <li>Банковский перевод</li>
+            </ul>
+            <p><b>Следующие услуги оплачиваются отдельно:</b></p>
+            <p>Сборка цифрового пианино – 600 рублей</p>
+            <p><b>Стоимость подъема на этаж</b></p>
+            <p>При отсутствии грузового лифта:</p>
+            <ul>
+              <li>до 50 кг 300 р./за каждый этаж</li>
+              <li>от 50 до 100 кг 750 р./за каждый этаж</li>
+              <li>от 100 до 150 кг 1200 р./за каждый этаж</li>
+            </ul>
+            <p>При наличии грузового лифта:</p>
+            <ul>
+              <li>до 50 кг 300 р.</li>
+              <li>от 50 до 100 кг 750 р.</li>
+              <li>от 100 до 150 кг 1200 р.</li>
+              <li>
+                от 150 кг (при наличии грузового лифта либо без него) 3200 р.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--================ End payment Area =================-->
+
+        <!--================ Start delivery Area =================-->
+        <section class="delivery">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="main__title">
+                  <span class="main__title--span" id="anchor2">Доставка</span>
+                </div>
+              </div>
+            </div>
+            <h4>Курьерская доставка</h4>
+            <p><b>Доставка по Москве</b></p>
+            <p>Бесплатная доставка заказов от 5 000 р.</p>
+            <p><b>Доставка в день заказа</b></p>
+            <p>
+              Заказы, оформленные до 12:00 доставим в этот же день, все товары в
+              заказе должны быть в наличии в городе доставки.
+            </p>
+            <p>Доставка в день заказа (по Москве в пределах МКАД):</p>
+            <ul>
+              <li>от 5 000 р. – бесплатно</li>
+              <li>до 5 000 р. – 390 р.</li>
+            </ul>
+            <p>Доставка осуществляется в интервале с 18:00 до 22:00 часов.</p>
+            <p><b>Доставка на следующий день и позже</b></p>
+            <p>
+              Доставка на следующий день (по Москве):<br />
+              - от 5 000 р. – бесплатно<br />
+              - до 5 000 р. – 290р.<br />
+            </p>
+
+            <hr />
+            <p><b>Доставка по Московской области </b></p>
+            <p>Бесплатная доставка заказов от 5 000 р.</p>
+            <p>
+              При доставке заказа на сумму более 5 000 р., но при наличии
+              акционного товара, товара со скидкой, товара, приобретенного в
+              рассрочку стоимость доставки 500 р
+            </p>
+            <p><b>Доставка на следующий день</b></p>
+            <p>Доставка на следующий день по Московской области:</p>
+            <ul>
+              <li>от 5 000 р. – бесплатно</li>
+              <li>сумма заказа до 5 000 р. – стоимость доставки 500 р.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!--================ End delivery Area =================-->
+
+        <!--================ Start contact Area =================-->
+        <section class="contacts">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="main__title">
+                  <span class="main__title--span" id="anchor3">Контакты</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 contact">
+                <h4>ООО "Мьюзикшоп"</h4>
+                <h5>Адрес:</h5>
+                <p>г. Москва, ул. Сходненская, д. 31</p>
+                <h5>Телефон:</h5>
+                <p><a href="tel:+74951112233">+7(495) 111-22-33</a></p>
+                <h5>Email:</h5>
+                <p><a href="mailto:info@muzicshop.ru">info@muzicshop.ru</a></p>
+                <h5>График работы:</h5>
+                <p>Пн-пт: 9-21.00, сб-вс: 10-23.00</p>
+              </div>
+              <div class="col-md-7">
+                <h4>Связаться с нами</h4>
+                <form action="" class="pt-3">
+                  <div class="form-group mb-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Ваше имя"
+                    />
+                  </div>
+                  <div class="form-group mb-4">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="form-group mb-4">
+                    <textarea
+                      class="form-control"
+                      placeholder="Текст сообщения"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="submit"
+                      class="btn btn-outline-warning"
+                      value="Отправить сообщение"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="map mt-3">
+              <script
+                type="text/javascript"
+                charset="utf-8"
+                async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A14ceaf82c1557f7d835f217aeaa93eba14820070425250ad35820f3ba6378ea3&amp;width=100%25&amp;height=423&amp;lang=ru_RU&amp;scroll=true"
+              ></script>
+            </div>
+          </div>
+        </section>
+        <!--================ End contact Area =================-->
+
+        <!--================ Start about us Area =================-->
+        <section class="about">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="main__title">
+                  <span class="main__title--span" id="anchor4">О нас</span>
+                </div>
+                <h4>
+                  Мьюзикшоп – экосистема для музыкантов, лидер среди розничных
+                  сетей по продаже музыкальных инструментов в России
+                </h4>
+                <p>
+                  Мы – экосистема для музыкантов и крупнейшая сеть из 30
+                  музыкальных магазинов в России, www.muzicshop.ru -
+                  интернет-магазин №1 по популярности в данном сегменте в
+                  Рунете.
+                </p>
+                <p>
+                  У нас представлен широкий ассортимент товаров для начинающих и
+                  профессиональных музыкантов, звукорежиссеров и продюсеров,
+                  владельцев бизнесов. А также удобные сервисы и услуги:
+                  возможность продать б/у инструмент на сайте, репетиционные
+                  базы, музыкальные курсы, аренда и настройка инструментов,
+                  рассрочка и кредит, доставка, сервисные центры. Компания -
+                  официальный дилер 600 мировых брендов Yamaha, Fender, Ibanez,
+                  Gibson, Marshall, Casio, AKG, Shure, Korg, Numark, Pioneer,
+                  Tamа, Zildjian, Mackie, JBL и других.
+                </p>
+                <p>
+                  Мьюзикшоп работает для своих покупателей более 20 лет.
+                  Компания первой на российском рынке музыкальных инструментов
+                  реализовала омниканальный подход: в магазинах и онлайн для
+                  покупателей всегда единые цены, ассортимент и сервис.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--================ End about us Area =================-->
+      </main>
+
+      <!--================ Start Footer Area =================-->
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4 text-center">
+              <div class="copyright">
+                &copy; Интернет-магазин музыкальных инструментов Muzicshop, 2024
+                г.<br />Копирование запрещено. Все права защищены.<br />
+                125369, г. Москва, ул. Сходненская, д. 16
+              </div>
+            </div>
+            <div class="col-sm-4 text-center">
+              <a class="footer-logo" href="index.html"
+                ><img src="img/logo.webp"
+              /></a>
+            </div>
+            <div class="col-sm-4 text-center">
+              <div class="footer_phone">
+                <a href="tel:+74951112233"
+                  ><i class="fa-solid fa-phone"></i
+                  ><span>+7(495) 111-22-33</span>
+                </a>
+              </div>
+              <div class="footer_phone">
+                <a href="mailto:info@muzicshop.ru"
+                  ><i class="fa-solid fa-envelope"></i
+                  ><span>info@muzicshop.ru</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--================ End Footer Area =================-->
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
